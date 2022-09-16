@@ -1,0 +1,38 @@
+<style>
+        h1{
+            font-family: sans-serif;
+            font-style:italic;
+            text-align: center;
+            text-decoration: underline;
+            
+        }
+
+        p{
+            font-weight: 600;
+            font-style: normal;
+            
+            
+        }
+
+        body{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 48px;
+        }
+
+        ul{
+          line-height: 48px;
+        }
+
+        #Amarelo{
+          background-color: yellow;
+        }
+        #Vermelho{
+          background-color: red;
+        }
+        #Marrom{
+          background-color: brown;
+        }
+    </style>
