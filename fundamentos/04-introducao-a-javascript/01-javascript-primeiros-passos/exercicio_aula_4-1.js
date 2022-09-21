@@ -17,3 +17,13 @@ let div = a / b
 
 //programa 5
 let mod = a % b;
+
+//exercicio 2
+
+if (a > b) {
+    console.log(a);
+} else if (a < b) {
+    console.log(b);
+} else {
+    console.log("são iguais");
+}
