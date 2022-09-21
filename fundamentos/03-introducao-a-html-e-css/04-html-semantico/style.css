@@ -1,0 +1,5 @@
+
+/* Nome científico em itálico parte do requisito 04 */
+section article p span {
+    font-style: italic;
+}
