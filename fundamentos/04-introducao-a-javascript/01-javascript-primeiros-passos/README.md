@@ -82,6 +82,22 @@ if (hora >= 13) {
 
 switch/case executar diferentes ações
 
+switch (variavel) {
+    case valor:
+        faça algo
+
+        break;
+    case valor:
+        faça algo
+
+        break;
+    case valor:
+        faça algo
+
+        break;
+    default:
+        faça algo (retorno padrão caso nenhum resultado esperado de valor seja)
+}
 
 array
 
