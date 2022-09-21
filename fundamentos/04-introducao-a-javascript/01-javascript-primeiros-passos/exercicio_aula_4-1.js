@@ -47,3 +47,17 @@ if (a > 0) {
 } else {
     console.log("zero");
 }
+
+//exercicio 5
+const ang_a = 45;
+const ang_b = 45;
+const ang_c = 90;
+let ang_sum = ang_a + ang_b + ang_c;
+
+if (ang_a < 0 || ang_b < 0 || ang_c < 0) {
+    console.log("Todos os ângulos precisam ter um valor válido (maiores que 0");
+} else if (ang_sum === 180) {
+    console.log("True");
+} else {
+    console.log("False");
+}
