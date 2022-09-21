@@ -27,7 +27,45 @@ constantes não podem ser reatribuidas valores
 == comparar valor
 === comparar valor e tipo de variável
 
+## Tipos Primitivos
+
+string palavras ou frases
+inter numeros
+boolean true or false
+undefined variável indefinida
+null nulo podendo ser mudado depois
+
+
+Javascript é tipagem dinâmica ele consegue identificar o tipo de variável mesmo sem ser dito
+
+
++ soma
+- subtração
+* multiplicação
+/ divisão
+** exponencial
+
+
+variavel++; incrementar - acrescentar algo a variável
+variavel--; decrementar - subtrair algo a variavel
+
+<script src="nome_arquivo_script"> </script> inserir no html para chamar o script
+
+
+
 if/else condição
+
+if (condiçao) {
+    fazer algo
+} else if (condição) {
+    fazer algo
+} else {
+    fazer algo
+}
+
+condição && condição levará em conta as duas condições
+
+
 ex:
 if (hora >= 13) {
     fazer algo
