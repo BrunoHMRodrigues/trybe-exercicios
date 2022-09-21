@@ -10,6 +10,19 @@ permite coisas como:
 - Aplicatovps mobile nativos
 - Aplicativos desktop
 
+let nome_variavel = valor; estrutura de declaração de uma variável
+const nome_constante = valor; estrutura declaração de uma constante
+
+console.log (nome_variavel); comando para imprimir o valor da variavel
+
+OBS: Não pode começar variavel com número
+OBS2: os nomes das variaveis são sensitiveis a letras maiusculos e minusculas
+
+camelCase boa prática minusculo e segunda palavras seguintes iniciam com maiusculo
+
+variáveis podem ser reatribuidas valores
+constantes não podem ser reatribuidas valores
+
 = atribuir valor a variável
 == comparar valor
 === comparar valor e tipo de variável
@@ -24,7 +37,7 @@ if (hora >= 13) {
 
 switch/case executar diferentes ações
 
-variável
+
 array
 
 for criar loops
