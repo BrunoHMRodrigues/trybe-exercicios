@@ -61,3 +61,29 @@ if (ang_a < 0 || ang_b < 0 || ang_c < 0) {
 } else {
     console.log("False");
 }
+
+//exercicio 6
+let peca = "Bispo"
+peca = peca.toLowerCase()
+switch (peca) {
+    case "peão":
+        console.log("1 casa à frente");
+        break;
+    case "torre":
+        console.log("vertical ou horizontal");
+        break;
+    case "bispo":
+        console.log("diagonal");
+        break;
+    case "cavalo":
+        console.log("2 em uma direção + 1 perpendicular");
+        break;
+    case "rainha":
+        console.log("qualquer direção");
+        break;
+    case "rei":
+        console.log("1 casa qualquer direção");
+        break;
+    default:
+        console.log("nome de peça inválida");
+}
