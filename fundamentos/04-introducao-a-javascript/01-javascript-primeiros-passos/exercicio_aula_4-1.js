@@ -107,3 +107,10 @@ if (nota >= 90 && nota <= 100) {
 } else {
     console.log("nota inválida");
 }
+
+//exercicio 8
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) {
+    console.log("ao menos um é par");
+} else {
+    console.log("nenhum deles é par");
+}
