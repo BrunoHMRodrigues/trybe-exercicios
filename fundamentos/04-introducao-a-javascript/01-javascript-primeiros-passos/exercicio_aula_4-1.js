@@ -133,3 +133,43 @@ if (custo < 0 || valor < 0) {
 } else {
     console.log(lucro);
 }
+
+//exercicio 11
+const salarioBruto = 3000;
+let inssAliquota = null;
+let irAliquota = null;
+let irParcela = null;
+
+if (salarioBruto <= 1556.94 && salarioBruto >= 0) {
+    inssAliquota = 0.08;
+} else if (salarioBruto <= 2594.92) {
+    inssAliquota = 0.09;
+} else if (salarioBruto <= 5189.82) {
+    inssAliquota = 0.11;
+} else if (salarioBruto > 5189.82) {
+    inssAliquota = 570.88 / salarioBruto 
+} else {
+    console.log("Salário Bruto precisa ser maior do que 0");
+}
+
+if (salarioBruto <= 1903.98 && salarioBruto >= 0) {
+    irAliquota = 0;
+    irParcela = 0;
+} else if (salarioBruto<= 2826.65) {
+    irAliquota = 0.075
+    irParcela = 142.80;
+} else if (salarioBruto<= 3751.05) {
+    irAliquota = 0.15
+    irParcela = 354.80;
+} else if (salarioBruto<= 4664.68) {
+    irAliquota = 0.225
+    irParcela = 636.13;
+} else if (salarioBruto > 4664.68) {
+    irAliquota = 0.275
+    irParcela = 869.36;
+} else {
+    console.log("Salário Bruto precisa ser maior do que 0");
+}
+
+let salarioLiquido = salarioBruto - (salarioBruto * inssAliquota) - ((salarioBruto * irAliquota) + irParcela);
+console.log(salarioLiquido);
