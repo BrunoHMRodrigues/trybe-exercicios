@@ -108,7 +108,7 @@ if (nota >= 90 && nota <= 100) {
     console.log("nota inválida");
 }
 
-//exercicio 8
+//exercicio 8 - foguetinho
 if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) {
     console.log("ao menos um é par");
 } else {
@@ -120,4 +120,16 @@ if (!(a % 2 === 0) || !(b % 2 === 0) || !(c % 2 === 0)) { //poderia utilizar a %
     console.log("ao menos um é impar");
 } else {
     console.log("nenhum deles é impar");
+}
+
+//exercicio 10
+const custo = 20;
+const valor = 40;
+let custoTotal = (custo * 1.20);
+let lucro = 1000 * (valor - custoTotal);
+
+if (custo < 0 || valor < 0) {
+    console.log("Todos os valores precisam ser válidos");
+} else {
+    console.log(lucro);
 }
