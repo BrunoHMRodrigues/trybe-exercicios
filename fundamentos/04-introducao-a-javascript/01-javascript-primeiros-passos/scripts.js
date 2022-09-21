@@ -69,12 +69,29 @@
 
 //exercicio assíncrono 03 ||
 
-let weekDay = "quarta-feira";
+// let weekDay = "quarta-feira";
 
-if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira"){
-    console.log("Oba, mais um dia de aprendizado na Trybe >:D")
-} else {
-    console.log("FINALMENTE, descanso merecido UwU")
+// if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira"){
+//     console.log("Oba, mais um dia de aprendizado na Trybe >:D")
+// } else {
+//     console.log("FINALMENTE, descanso merecido UwU")
+// }
+
+//exercicio assíncrono 04 switch/case
+
+let status = "aprovada";
+
+switch (status){
+    case "aprovada":
+        console.log("Parabéns, você foi aprovada(o)!");
+        break;
+    case "lista":
+        console.log("Você está na nossa lista de espera");
+        break;
+    case "reprovada":
+        console.log("Você foi reprovada(o)");
+        break;
+    default:
+        console.log("Informação incorreta");
 }
-
 
