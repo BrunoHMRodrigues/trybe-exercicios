@@ -73,6 +73,13 @@ if (hora >= 13) {
     fazer algo diferente
 }
 
+## Operadores Lógicos
+
+&& and
+|| or
+! not
+
+
 switch/case executar diferentes ações
 
 
