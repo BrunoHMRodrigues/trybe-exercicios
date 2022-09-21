@@ -1,5 +1,99 @@
+/* Estilizando Cabeçalho */
+.cabecalho {
+    text-align: center;
+    color: white;
+    font-family:serif;
+    font-weight: bold;
+    font-size: 24px;
+    
+
+    background-color: rgb(5, 71, 5);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/* Estilizando Navegação */
+.navegacao {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 60px;
+
+    text-align: center;  
+
+    border: 2px solid rgb(45, 126, 72);      
+    background-color: rgb(5, 71, 5);
+}
+
+/* Estilizando elementos "a" da Navegação */
+nav.navegacao a {
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;    
+}
+
+/* Estilizando negrito quando passar o mouse pelos elementos de navegação */
+.navegacao a:hover {
+    font-weight: 900;
+}
 
 /* Nome científico em itálico parte do requisito 04 */
 section article p span {
     font-style: italic;
+}
+
+/* Estilizando seção 3 - informações científicas */
+
+/* Estilizando a seção 3 */
+#secao-3-informacoes-cientificas {
+    padding: 10px;
+}
+
+/* Estilizando seção 3 subseção 1 - informações científicas */
+#subsecao-3-1-informacoes-cientificas {    
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;    
+}
+
+/* Estilizando as informações gerais */
+section .informacoes-gerais {
+    width: 100%;
+    margin: 0;
+}
+
+/* Retirando margem do subtitulo */
+section .informacoes-gerais h2 {
+    margin: 0;
+}
+
+/* Estilizando seção da imagem */
+div#secao-informacao-cientificas {
+    display: inline-block;
+    width: 35%;
+    margin-left: 10%;
+
+    background-color: white;
+}
+
+/* Estilizando Imagem referente a informações científicas */
+div #imagem-informacao-cientificas {        
+    border: 10px solid rgb(5, 71, 5);
+    width: 80%;
+    padding: 5px;
+}
+
+/* Estilizando tabela da seção 3 */
+section table {
+    display: inline-block;    
+}
+
+/* Inserindo as bordas da tabela */
+table, th, td {
+    border: 1px solid;
+}
+
+/* Alinhando texto do conteúdo da tabela ao centro */
+th, td {
+    text-align: center;
+    width: 16%;
 }
