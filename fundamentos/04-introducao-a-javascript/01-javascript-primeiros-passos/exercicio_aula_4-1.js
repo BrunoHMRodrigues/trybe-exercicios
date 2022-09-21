@@ -114,3 +114,10 @@ if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0) {
 } else {
     console.log("nenhum deles é par");
 }
+
+//exercicio 9
+if (!(a % 2 === 0) || !(b % 2 === 0) || !(c % 2 === 0)) { //poderia utilizar a % 2 === 1
+    console.log("ao menos um é impar");
+} else {
+    console.log("nenhum deles é impar");
+}
