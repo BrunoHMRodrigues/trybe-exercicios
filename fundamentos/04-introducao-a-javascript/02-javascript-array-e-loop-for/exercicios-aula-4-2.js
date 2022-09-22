@@ -50,12 +50,23 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(maiorValor);
 
 // 06 - Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”
-let contadorImpar = 0;
+// let contadorImpar = 0;
+
+// for (const number of numbers) {
+//     if (number % 2 === 1) {
+//         contadorImpar = contadorImpar +=1
+//     }
+// }
+
+// console.log(contadorImpar);
+
+// 07 - Utilizando for, descubra qual o menor valor contido no array e imprima-o
+let menorValor = numbers[0];
 
 for (const number of numbers) {
-    if (number % 2 === 1) {
-        contadorImpar = contadorImpar +=1
+    if (number < menorValor) {
+        menorValor = number
     }
 }
 
-console.log(contadorImpar);
+console.log(menorValor);
