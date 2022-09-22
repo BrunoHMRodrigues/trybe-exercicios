@@ -23,9 +23,17 @@ let sum = 0;
 let mediaAritmetica = 0;
 
 for (const number of numbers) {
-    sum = sum + number;
+     sum = sum + number;
 }
 
 mediaAritmetica = sum / numbers.length;
 
 console.log(mediaAritmetica);
+
+// Com base no código que acabou de gerar, faça com que, caso o valor final seja maior que 20, imprima a mensagem: “valor maior que 20”. Caso não seja, imprima a mensagem: “valor menor ou igual a 20”
+
+if (mediaAritmetica > 20) {
+    console.log("valor maior que 20");
+} else {
+    console.log("valor menor ou igual a 20");
+}
