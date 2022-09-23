@@ -70,18 +70,32 @@
 
 // Escreva um programa que, dado um valor n qualquer, seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n. Por exemplo:
 
-let n = 5;
-let strAsteriscos = "";
+// let n = 5;
+// let strAsteriscos = "";
 
-if (n > 1) {
-    for (let index = 0; index < n; index+=1) {
-        strAsteriscos = strAsteriscos + "*";
+// if (n > 1) {
+//     for (let index = 0; index < n; index+=1) {
+//         strAsteriscos = strAsteriscos + "*";
         
-    }
+//     }
 
-    for (let index = 0; index < n; index+=1) {
-        console.log(strAsteriscos);        
+//     for (let index = 0; index < n; index+=1) {
+//         console.log(strAsteriscos);        
+//     }
+// }
+
+// Exercicio Bônus 2
+// Faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+
+let n = 5;
+ let strAsteriscos = "";
+
+ if (n > 1) {
+     for (let index = 0; index < n; index+=1) {
+        strAsteriscos = strAsteriscos + "*";
+        console.log(strAsteriscos);
     }
 }
+
 
 
