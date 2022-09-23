@@ -100,21 +100,46 @@
 // Exercicio Bônus 3
 // Agora inverta o lado do triângulo.
 
-let n = 5;
-let strAsteriscos = "";
-let espacamento = "";
+// let n = 5;
+// let strAsteriscos = "";
+// let espacamento = "";
 
-if (n > 1) {
-    for (let index = 0; index < n; index+=1) {
-        espacamento = "";
+// if (n > 1) {
+//     for (let index = 0; index < n; index+=1) {
+//         espacamento = "";
 
-        for (let index2 = 0; index2 < n-index-1; index2+=1) {
-            espacamento = espacamento + " ";
+//         for (let index2 = 0; index2 < n-index-1; index2+=1) {
+//             espacamento = espacamento + " ";
             
-        }
-        strAsteriscos = strAsteriscos + "*";
-        console.log(espacamento + strAsteriscos);
+//         }
+//         strAsteriscos = strAsteriscos + "*";
+//         console.log(espacamento + strAsteriscos);
+//     }
+// }
+
+// Exercicio Bônus 4
+// Depois, faça uma pirâmide com n asteriscos de base:
+//tentar depois
+
+// Exercicio Bônus 5
+// Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
+//tentar depois
+
+// Exercicio Bônus 6
+// Faça um programa que diz se um número definido numa variável é primo ou não.
+
+let number = 6;
+let contPrimos = 0;
+
+for (let index = 1; index <= number; index+=1) {            
+    if (7 % index === 0) {
+        contPrimos = contPrimos + 1;
     }
+}
+if (contPrimos == 2) {
+    console.log(number + " é primo.");
+} else {
+    console.log(number + " não é primo.");
 }
 
 
@@ -133,16 +158,19 @@ if (n > 1) {
 // let n = 5;
 // let strAsteriscos = "";
 
-//  if (n > 1) {
+// if (n > 1) {
 //     for (let index = 0; index < n; index+=1) {
 //         strAsteriscos = strAsteriscos + "*";
-                
+        
+
+//         for (let index = 1; index < strAsteriscos.length; index+=1) {
+//             console.log(strAsteriscos.slice(0,-index));
+//         }
+
 //     }
 
-//     console.log(strAsteriscos)
-//     for (let index = 1; index < strAsteriscos.length; index+=1) {
-//         console.log(strAsteriscos.slice(0,-index));
-//     }
+    
+    
 // }
 
 
