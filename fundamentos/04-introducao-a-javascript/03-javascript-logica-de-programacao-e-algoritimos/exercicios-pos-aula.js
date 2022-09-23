@@ -45,22 +45,43 @@
 // Exercicio 4
 // Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.
 
-let numbers = [];
-let contDivisores = 0;
-let maiorPrimo = 0;
+// let numbers = [];
+// let contDivisores = 0;
+// let maiorPrimo = 0;
 
-for (let index = 0; index <= 50-2; index+=1) {
-    numbers.push(index + 2);
-    contDivisores = 0;
+// for (let index = 0; index <= 50-2; index+=1) {
+//     numbers.push(index + 2);
+//     contDivisores = 0;
 
-    for (let index2 = 1; index2 <= (index+2); index2+=1) {
-        if ((index+2) % index2 == 0) {
-            contDivisores +=1;
-        }        
+//     for (let index2 = 1; index2 <= (index+2); index2+=1) {
+//         if ((index+2) % index2 == 0) {
+//             contDivisores +=1;
+//         }        
+//     }
+//     if (contDivisores == 2) {
+//         maiorPrimo = index+2;
+//     }
+// }
+
+// console.log(maiorPrimo);
+
+// Exercicios Bônus
+//Exercicio Bônus 1
+
+// Escreva um programa que, dado um valor n qualquer, seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n. Por exemplo:
+
+let n = 5;
+let strAsteriscos = "";
+
+if (n > 1) {
+    for (let index = 0; index < n; index+=1) {
+        strAsteriscos = strAsteriscos + "*";
+        
     }
-    if (contDivisores == 2) {
-        maiorPrimo = index+2;
+
+    for (let index = 0; index < n; index+=1) {
+        console.log(strAsteriscos);        
     }
 }
 
-console.log(maiorPrimo);
+
