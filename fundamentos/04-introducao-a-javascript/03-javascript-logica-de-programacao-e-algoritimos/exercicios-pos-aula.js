@@ -22,22 +22,45 @@
 //Exercicio 3
 
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
 
 // Utilize a estrutura de repetição for para escrever dois algoritmos: um que retorne a maior palavra desse array e outro que retorne a menor. Considere o número de caracteres de cada palavra.
 
-let menorPalavra = array[0];
-let maiorPalavra = array[0];
+// let menorPalavra = array[0];
+// let maiorPalavra = array[0];
 
-for (let index = 0; index < array.length; index+=1) {
-    if (array[index].length > maiorPalavra.length) {
-        maiorPalavra = array[index];
-    }
+// for (let index = 0; index < array.length; index+=1) {
+//     if (array[index].length > maiorPalavra.length) {
+//         maiorPalavra = array[index];
+//     }
 
-    if (array[index].length < menorPalavra.length) {
-        menorPalavra = array[index];
-    }
+//     if (array[index].length < menorPalavra.length) {
+//         menorPalavra = array[index];
+//     }
     
+// }
+// console.log(maiorPalavra);
+// console.log(menorPalavra);
+
+// Exercicio 4
+// Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.
+
+let numbers = [];
+let contDivisores = 0;
+let maiorPrimo = 0;
+
+for (let index = 0; index <= 50-2; index+=1) {
+    numbers.push(index + 2);
+    contDivisores = 0;
+
+    for (let index2 = 1; index2 <= (index+2); index2+=1) {
+        if ((index+2) % index2 == 0) {
+            contDivisores +=1;
+        }        
+    }
+    if (contDivisores == 2) {
+        maiorPrimo = index+2;
+    }
 }
-console.log(maiorPalavra);
-console.log(menorPalavra);
+
+console.log(maiorPrimo);
