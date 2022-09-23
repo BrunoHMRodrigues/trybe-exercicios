@@ -87,13 +87,31 @@
 // Exercicio Bônus 2
 // Faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
 
+// let n = 5;
+//  let strAsteriscos = "";
+
+//  if (n > 1) {
+//      for (let index = 0; index < n; index+=1) {
+//         strAsteriscos = strAsteriscos + "*";
+//         console.log(strAsteriscos);
+//     }
+// }
+
+// Exercicio Bônus 3
+// Agora inverta o lado do triângulo.
+
 let n = 5;
- let strAsteriscos = "";
+let strAsteriscos = "";
 
  if (n > 1) {
-     for (let index = 0; index < n; index+=1) {
+    for (let index = 0; index < n; index+=1) {
         strAsteriscos = strAsteriscos + "*";
-        console.log(strAsteriscos);
+                
+    }
+    
+    console.log(strAsteriscos)
+    for (let index = 1; index < strAsteriscos.length; index+=1) {
+        console.log(strAsteriscos.slice(0,-index));
     }
 }
 
