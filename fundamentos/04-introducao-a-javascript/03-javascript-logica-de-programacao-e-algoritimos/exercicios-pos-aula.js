@@ -102,18 +102,48 @@
 
 let n = 5;
 let strAsteriscos = "";
+let espacamento = "";
 
- if (n > 1) {
+if (n > 1) {
     for (let index = 0; index < n; index+=1) {
+        espacamento = "";
+
+        for (let index2 = 0; index2 < n-index-1; index2+=1) {
+            espacamento = espacamento + " ";
+            
+        }
         strAsteriscos = strAsteriscos + "*";
-                
-    }
-    
-    console.log(strAsteriscos)
-    for (let index = 1; index < strAsteriscos.length; index+=1) {
-        console.log(strAsteriscos.slice(0,-index));
+        console.log(espacamento + strAsteriscos);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Lógica errada para exercicio 3, mas guardada
+// let n = 5;
+// let strAsteriscos = "";
+
+//  if (n > 1) {
+//     for (let index = 0; index < n; index+=1) {
+//         strAsteriscos = strAsteriscos + "*";
+                
+//     }
+
+//     console.log(strAsteriscos)
+//     for (let index = 1; index < strAsteriscos.length; index+=1) {
+//         console.log(strAsteriscos.slice(0,-index));
+//     }
+// }
 
 
 
