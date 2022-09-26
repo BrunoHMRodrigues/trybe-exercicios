@@ -60,38 +60,54 @@
 // Divisão (a / b)
 // Módulo (a % b)
 
-function soma(a,b) {
-    let somar = a + b;
+// function soma(a,b) {
+//     let somar = a + b;
 
-    return somar;
+//     return somar;
+// }
+
+// function subtracao(a,b) {
+//     let subtrair = a - b;
+
+//     return subtrair;
+// }
+
+// function multiplicacao(a,b) {
+//     let multiplicar = a * b;
+
+//     return multiplicar;
+// }
+
+// function divisao(a,b) {
+//     let dividir = a / b;
+
+//     return dividir;
+// }
+
+// function modulo(a,b) {
+//     let modular = a % b;
+
+//     return modular;
+// }
+
+// console.log(soma(5,6));
+// console.log(subtracao(5,6));
+// console.log(multiplicacao(5,6));
+// console.log(divisao(5,6));
+// console.log(modulo(5,6));
+
+// Exercicio 02
+
+// Faça um programa que retorne o maior de dois números. Defina, no começo do programa, duas constantes com os valores que serão comparados.
+
+function maiorNumero(a,b) {
+    let maior = null
+    if (a > b) {
+        maior = a;
+        return maior;
+    } else {
+        maior = b;
+        return maior;
+    }
 }
-
-function subtracao(a,b) {
-    let subtrair = a - b;
-
-    return subtrair;
-}
-
-function multiplicacao(a,b) {
-    let multiplicar = a * b;
-
-    return multiplicar;
-}
-
-function divisao(a,b) {
-    let dividir = a / b;
-
-    return dividir;
-}
-
-function modulo(a,b) {
-    let modular = a % b;
-
-    return modular;
-}
-
-console.log(soma(5,6));
-console.log(subtracao(5,6));
-console.log(multiplicacao(5,6));
-console.log(divisao(5,6));
-console.log(modulo(5,6));
+console.log(maiorNumero(1,6));
