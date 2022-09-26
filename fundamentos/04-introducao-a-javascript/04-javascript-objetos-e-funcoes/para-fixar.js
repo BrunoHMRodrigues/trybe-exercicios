@@ -194,6 +194,14 @@ let info = {
     recorrente: 'Sim'
 };
 
-info['recorrente'] = "Sim";
+// info['recorrente'] = "Sim";
 
-console.log(info);
+// console.log(info);
+
+// Exercicio 03
+
+// Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console:
+
+for (const key in info) {
+    console.log(key);
+}
