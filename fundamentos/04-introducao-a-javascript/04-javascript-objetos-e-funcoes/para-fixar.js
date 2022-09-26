@@ -39,12 +39,59 @@
 
   // Usando o objeto abaixo, utilize for/in e imprima um console.log com as chaves e valores desse objeto.
 
-  let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
-  };
+//   let car = {
+//     model: 'A3 Sedan',
+//     manufacturer: 'Audi',
+//     year: 2020
+//   };
 
-  for (const key in car) {    
-    console.log(key, car[key]);        
+//   for (const key in car) {    
+//     console.log(key, car[key]);        
+// }
+
+// Funções
+// Exercicio 01
+
+// Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b, definidas no começo com os valores que serão operados. Faça programas para:
+
+// Adição (a + b)
+// Subtração (a - b)
+// Multiplicação (a * b)
+// Divisão (a / b)
+// Módulo (a % b)
+
+function soma(a,b) {
+    let somar = a + b;
+
+    return somar;
 }
+
+function subtracao(a,b) {
+    let subtrair = a - b;
+
+    return subtrair;
+}
+
+function multiplicacao(a,b) {
+    let multiplicar = a * b;
+
+    return multiplicar;
+}
+
+function divisao(a,b) {
+    let dividir = a / b;
+
+    return dividir;
+}
+
+function modulo(a,b) {
+    let modular = a % b;
+
+    return modular;
+}
+
+console.log(soma(5,6));
+console.log(subtracao(5,6));
+console.log(multiplicacao(5,6));
+console.log(divisao(5,6));
+console.log(modulo(5,6));
