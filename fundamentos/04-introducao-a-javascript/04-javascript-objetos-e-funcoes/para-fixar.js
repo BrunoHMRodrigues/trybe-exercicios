@@ -202,6 +202,14 @@ let info = {
 
 // Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console:
 
+// for (const key in info) {
+//     console.log(key);
+// }
+
+// Exercicio 04
+
+// Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto. Valor esperado no console:
+
 for (const key in info) {
-    console.log(key);
+    console.log(info[key]);
 }
