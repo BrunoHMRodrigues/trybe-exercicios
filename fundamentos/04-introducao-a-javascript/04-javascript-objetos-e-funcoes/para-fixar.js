@@ -100,14 +100,32 @@
 
 // Faça um programa que retorne o maior de dois números. Defina, no começo do programa, duas constantes com os valores que serão comparados.
 
-function maiorNumero(a,b) {
-    let maior = null
-    if (a > b) {
+// function maiorNumero(a,b) {
+//     let maior = null
+//     if (a > b) {
+//         maior = a;
+//     } else {
+//         maior = b;
+//     }
+//     return maior;
+// }
+// console.log(maiorNumero(1,6));
+
+// Exercicio 03
+
+// Faça um programa que retorne o maior de três números. Defina, no começo do programa, três constantes com os valores que serão comparados.
+
+function maiorNumero (a,b,c) {
+    let maior = null;
+    if (a > b && a > c) {
         maior = a;
-        return maior;
+        
+    } else if (b > a && b> c) {
+        maior = b;        
     } else {
-        maior = b;
-        return maior;
+        maior = c;
     }
+    return maior;
 }
-console.log(maiorNumero(1,6));
+
+console.log(maiorNumero(1,5,4));
