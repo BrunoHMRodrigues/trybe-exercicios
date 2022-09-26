@@ -154,16 +154,31 @@
 
 // Um ângulo será considerado inválido se não tiver um valor positivo.
 
-function eTriangulo (a,b,c) {
-    let somaAngulos = a + b + c;
+// function eTriangulo (a,b,c) {
+//     let somaAngulos = a + b + c;
 
-    if (a < 0 || b < 0 || c < 0) {
-        return "erro";       
-    } else if (somaAngulos === 180) {
-        return true;
-    } else if (somaAngulos !== 180) {
-        return false;
-    }
-}
+//     if (a < 0 || b < 0 || c < 0) {
+//         return "erro";       
+//     } else if (somaAngulos === 180) {
+//         return true;
+//     } else if (somaAngulos !== 180) {
+//         return false;
+//     }
+// }
 
-console.log(eTriangulo(90,45,-40));
+// console.log(eTriangulo(90,45,-40));
+
+// Exercicios pós aula ao vivo
+
+// Exercicio 01
+
+let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  };
+
+  // Imprima no console uma mensagem de boas-vindas para a personagem acima, incluindo seu nome. Use a sintaxe meuObjeto.chave. Valor esperado no console:
+  // Bem-vinda, Margarida
+
+  console.log("Bem-vinda, " + info.personagem);
