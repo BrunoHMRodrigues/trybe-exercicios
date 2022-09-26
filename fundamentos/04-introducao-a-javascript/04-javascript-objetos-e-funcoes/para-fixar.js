@@ -115,17 +115,33 @@
 
 // Faça um programa que retorne o maior de três números. Defina, no começo do programa, três constantes com os valores que serão comparados.
 
-function maiorNumero (a,b,c) {
-    let maior = null;
-    if (a > b && a > c) {
-        maior = a;
+// function maiorNumero (a,b,c) {
+//     let maior = null;
+//     if (a > b && a > c) {
+//         maior = a;
         
-    } else if (b > a && b> c) {
-        maior = b;        
+//     } else if (b > a && b> c) {
+//         maior = b;        
+//     } else {
+//         maior = c;
+//     }
+//     return maior;
+// }
+
+// console.log(maiorNumero(1,5,4));
+
+// Exercicio 04
+
+//Faça um programa que, dado um valor recebido como parâmetro, retorne “positive” se esse valor for positivo, “negative” se for negativo, e caso não seja nem positivo e nem negativo retorne “zero”.
+
+function positivoOuNegativo (valor) {
+    if (valor > 0) {
+        return "positive";
+    } else if (valor < 0) {
+        return "negative";
     } else {
-        maior = c;
+        return "zero";
     }
-    return maior;
 }
 
-console.log(maiorNumero(1,5,4));
+console.log(positivoOuNegativo(-5));
