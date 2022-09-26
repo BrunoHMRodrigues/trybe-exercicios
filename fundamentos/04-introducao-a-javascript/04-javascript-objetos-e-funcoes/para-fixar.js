@@ -134,14 +134,36 @@
 
 //Faça um programa que, dado um valor recebido como parâmetro, retorne “positive” se esse valor for positivo, “negative” se for negativo, e caso não seja nem positivo e nem negativo retorne “zero”.
 
-function positivoOuNegativo (valor) {
-    if (valor > 0) {
-        return "positive";
-    } else if (valor < 0) {
-        return "negative";
-    } else {
-        return "zero";
+// function positivoOuNegativo (valor) {
+//     if (valor > 0) {
+//         return "positive";
+//     } else if (valor < 0) {
+//         return "negative";
+//     } else {
+//         return "zero";
+//     }
+// }
+
+// console.log(positivoOuNegativo(-5));
+
+// Exercicio 05
+
+// Faça um programa que receba três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido, o programa deve retornar uma mensagem de erro.
+
+// Para os ângulos serem de um triângulo válido, a soma dos três devem ser 180 graus.
+
+// Um ângulo será considerado inválido se não tiver um valor positivo.
+
+function eTriangulo (a,b,c) {
+    let somaAngulos = a + b + c;
+
+    if (a < 0 || b < 0 || c < 0) {
+        return "erro";       
+    } else if (somaAngulos === 180) {
+        return true;
+    } else if (somaAngulos !== 180) {
+        return false;
     }
 }
 
-console.log(positivoOuNegativo(-5));
+console.log(eTriangulo(90,45,-40));
