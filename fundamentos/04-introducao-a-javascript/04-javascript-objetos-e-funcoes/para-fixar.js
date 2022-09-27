@@ -372,29 +372,49 @@
 
 // Valor esperado no retorno da função: 2.
 
-let array = [2, 3, 2, 5, 8, 2, 3];
+// let array = [2, 3, 2, 5, 8, 2, 3];
 
-function contRepetido(array) {    
-    let maisRepetido = array [0];
-    let maiorContador = null;
+// function contRepetido(array) {    
+//     let maisRepetido = array [0];
+//     let maiorContador = null;
 
-    for (let index = 0; index < array.length; index+=1) {
-        let contador = 0;
-        let numero = array[index];
+//     for (let index = 0; index < array.length; index+=1) {
+//         let contador = 0;
+//         let numero = array[index];
 
-        for (let index2 = 0; index2 < array.length; index2 +=1) {
-            if (array[index2] == numero) {
-                contador +=1;
-            }            
-        }
+//         for (let index2 = 0; index2 < array.length; index2 +=1) {
+//             if (array[index2] == numero) {
+//                 contador +=1;
+//             }            
+//         }
 
-        if (contador > maiorContador) {
-            maisRepetido = array[index];
-            maiorContador = contador;
-        }
+//         if (contador > maiorContador) {
+//             maisRepetido = array[index];
+//             maiorContador = contador;
+//         }
         
-    }
-    return maisRepetido;
-}
+//     }
+//     return maisRepetido;
+// }
 
-console.log(contRepetido(array));
+// console.log(contRepetido(array));
+
+// Exercicio 06
+
+// Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+// Valor de teste: N = 5.
+
+// Valor esperado no retorno da função: 1+2+3+4+5 = 15.
+
+let N = 5
+
+function somarAte (N) {
+    let total = 0;
+
+    for (let index = 1; index <= N; index+=1) {
+        total += index;        
+    }
+    return total;
+}
+console.log(somarAte(N));
