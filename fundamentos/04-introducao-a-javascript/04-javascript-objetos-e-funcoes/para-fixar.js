@@ -407,14 +407,58 @@
 
 // Valor esperado no retorno da função: 1+2+3+4+5 = 15.
 
-let N = 5
+// let N = 5
 
-function somarAte (N) {
-    let total = 0;
+// function somarAte (N) {
+//     let total = 0;
 
-    for (let index = 1; index <= N; index+=1) {
-        total += index;        
+//     for (let index = 1; index <= N; index+=1) {
+//         total += index;        
+//     }
+//     return total;
+// }
+// console.log(somarAte(N));
+
+// Exercicio 07
+
+// Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
+
+// Valor de teste: 'trybe' e 'be'
+
+// Valor esperado no retorno da função: true
+
+// verificaFimPalavra('trybe', 'be');
+
+// Retorno esperado: true
+// verificaFimPalavra('joaofernando', 'fernan');
+
+// Retorno esperado: false
+
+let word = "trybe";
+let ending = "be";
+
+function verificaFim (word, ending) {
+    let tamanhoEnding = 0;
+    let fimWord = "";
+
+    for (let index = 1; index <= ending.length; index+=1) {
+        tamanhoEnding +=1;
     }
-    return total;
+    
+    for (let index =  (word.length) - tamanhoEnding; index < word.length; index+=1) {
+        fimWord += word[index];        
+    }
+
+    if (fimWord == ending) {
+        return true;
+    } else {
+        return false;
+    }
+
+    // if ((word[word.length-2] + word[word.length-1]) == ending ) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
 }
-console.log(somarAte(N));
+console.log(verificaFim(word, ending));
