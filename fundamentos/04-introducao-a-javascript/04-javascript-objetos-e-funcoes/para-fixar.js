@@ -278,18 +278,41 @@
 // verificaPalindrome('desenvolvimento')
 
 // Retorno esperado: false
-let palavra = "arare";
+// let palavra = "arare";
 
-function ePalindromo (palavra) {
-    let arrayPalavra = palavra.split('').join();
-    let palavraReversa = palavra.split('').reverse().join();
+// function ePalindromo (palavra) {
+//     let arrayPalavra = palavra.split('').join();
+//     let palavraReversa = palavra.split('').reverse().join();
 
-    if (arrayPalavra === palavraReversa) {
-        return true
-    } else {
-        return false
+//     if (arrayPalavra === palavraReversa) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+
+// console.log(ePalindromo(palavra));
+
+// Exercicio 02
+
+// Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+// Array de teste: [2, 3, 6, 7, 10, 1];.
+
+// Valor esperado no retorno da função: 4.
+let array = [2, 3, 6, 7, 10, 1];
+
+function maiorValor (array) {
+    let maior = array[0];
+    let indice = 0
+    for (let index = 0; index < array.length; index +=1) {
+        if (array[index] > maior) {
+            maior = array[index];
+            indice = index
+        }
     }
+
+    return indice;
 }
-
-
-console.log(ePalindromo(palavra));
+console.log(maiorValor(array));
