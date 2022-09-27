@@ -434,26 +434,26 @@
 
 // Retorno esperado: false
 
-let word = "trybe";
-let ending = "be";
+// let word = "trybe";
+// let ending = "be";
 
-function verificaFim (word, ending) {
-    let tamanhoEnding = 0;
-    let fimWord = "";
+// function verificaFim (word, ending) {
+//     let tamanhoEnding = 0;
+//     let fimWord = "";
 
-    for (let index = 1; index <= ending.length; index+=1) {
-        tamanhoEnding +=1;
-    }
+//     for (let index = 1; index <= ending.length; index+=1) {
+//         tamanhoEnding +=1;
+//     }
     
-    for (let index =  (word.length) - tamanhoEnding; index < word.length; index+=1) {
-        fimWord += word[index];        
-    }
+//     for (let index =  (word.length) - tamanhoEnding; index < word.length; index+=1) {
+//         fimWord += word[index];        
+//     }
 
-    if (fimWord == ending) {
-        return true;
-    } else {
-        return false;
-    }
+    // if (fimWord == ending) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
 
     // if ((word[word.length-2] + word[word.length-1]) == ending ) {
     //     return true;
@@ -461,4 +461,6 @@ function verificaFim (word, ending) {
     //     return false;
     // }
 }
-console.log(verificaFim(word, ending));
+// console.log(verificaFim(word, ending));
+
+// Exercicios Bônus
