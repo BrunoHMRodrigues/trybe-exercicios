@@ -301,18 +301,42 @@
 // Array de teste: [2, 3, 6, 7, 10, 1];.
 
 // Valor esperado no retorno da função: 4.
-let array = [2, 3, 6, 7, 10, 1];
+// let array = [2, 3, 6, 7, 10, 1];
 
-function maiorValor (array) {
-    let maior = array[0];
+// function maiorValor (array) {
+//     let maior = array[0];
+//     let indice = 0
+//     for (let index = 0; index < array.length; index +=1) {
+//         if (array[index] > maior) {
+//             maior = array[index];
+//             indice = index
+//         }
+//     }
+
+//     return indice;
+// }
+// console.log(maiorValor(array));
+
+// Exercicio 03
+
+// Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+// Array de teste: [2, 4, 6, 7, 10, 0, -3];.
+
+// Valor esperado no retorno da função: 6.
+
+let array = [2, 4, 6, 7, 10, 0, -3];
+
+function menorValor (array) {
+    let menor = array[0];
     let indice = 0
     for (let index = 0; index < array.length; index +=1) {
-        if (array[index] > maior) {
-            maior = array[index];
+        if (array[index] < menor) {
+            menor = array[index];
             indice = index
         }
     }
 
     return indice;
 }
-console.log(maiorValor(array));
+console.log(menorValor(array));
