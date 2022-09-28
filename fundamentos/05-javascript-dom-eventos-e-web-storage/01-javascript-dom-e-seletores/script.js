@@ -15,3 +15,8 @@ document.getElementById("subtitle").innerText = "Alterando subtítulo";
 // Exercicio conteúdo assíncrono 05
 // Adicione uma classe igual para os dois parágrafos;
 console.log(document.getElementsByTagName("p"));
+
+// Exercicio conteúdo assíncrono 06
+// Altere algum estilo do primeiro deles;
+document.getElementsByTagName("p")[0].style.color = 'blue';
+
