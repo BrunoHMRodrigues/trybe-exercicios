@@ -64,7 +64,13 @@
     }
     maiusculaFrase();
     //   6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
-    
+    function exibeP () {
+        let conteudoP = document.getElementsByTagName("p");
+        for (let index = 0; index < conteudoP.length; index+=1) {
+            console.log(document.getElementsByTagName("p")[index].innerText);            
+        }
+    }
+    exibeP();
     </script>
   </body>
 </html>
