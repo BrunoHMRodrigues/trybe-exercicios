@@ -20,3 +20,7 @@ console.log(document.getElementsByTagName("p"));
 // Altere algum estilo do primeiro deles;
 document.getElementsByTagName("p")[0].style.color = 'blue';
 
+// Exercicio conteúdo assíncrono 07
+// Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName.
+document.getElementsByTagName("h4")[0].style.color = "red";
+
