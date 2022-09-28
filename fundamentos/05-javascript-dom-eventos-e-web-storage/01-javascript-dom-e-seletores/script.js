@@ -11,3 +11,7 @@ document.getElementById("second-paragraph").innerText = "Távola Redonda";
 // Por fim, recupere o subtítulo e altere-o também.
 
 document.getElementById("subtitle").innerText = "Alterando subtítulo";
+
+// Exercicio conteúdo assíncrono 05
+// Adicione uma classe igual para os dois parágrafos;
+console.log(document.getElementsByTagName("p"));
