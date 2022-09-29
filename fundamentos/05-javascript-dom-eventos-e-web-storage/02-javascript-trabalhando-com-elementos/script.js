@@ -27,6 +27,6 @@ const text = elementoOndeVoceEsta.nextSibling;
 
 // Exercicio 7
 // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
-
+const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
 // Exercicio 8
 // Agora acesse o terceiroFilho a partir de pai.
