@@ -46,8 +46,12 @@ pai.appendChild(irmaoElementoOndeVoceEsta);
 const filhoElementoOndeVoceEsta = document.createElement("section");
 filhoElementoOndeVoceEsta.id = "filhoElementoOndeVoceEsta";
 elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+
 // Exercicio 03
 // Crie um filho para primeiroFilhoDoFilho.
+const filhoPrimeiroFilhoDoFilho = document.createElement("section");
+filhoPrimeiroFilhoDoFilho.id = "filhoPrimeiroFilhoDoFilho";
+primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
 
 // Exercicio 04
 // A partir desse filho criado, acesse terceiroFilho.
