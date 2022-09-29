@@ -55,3 +55,4 @@ primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
 
 // Exercicio 04
 // A partir desse filho criado, acesse terceiroFilho.
+primeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling
