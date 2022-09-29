@@ -32,3 +32,20 @@ const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
 // Exercicio 8
 // Agora acesse o terceiroFilho a partir de pai.
 const terceiroFilhoCaminho2 = pai.lastElementChild.previousElementSibling;
+
+
+// Exercicio Foguetinho 02 - Criando Elementos
+// Exercicio 01
+// Crie um irmão para elementoOndeVoceEsta.
+const irmaoElementoOndeVoceEsta = document.createElement("section");
+irmaoElementoOndeVoceEsta.id = "irmaoElementoOndeVoceEsta";
+pai.appendChild(irmaoElementoOndeVoceEsta);
+
+// Exercicio 02
+// Crie um filho para elementoOndeVoceEsta.
+
+// Exercicio 03
+// Crie um filho para primeiroFilhoDoFilho.
+
+// Exercicio 04
+// A partir desse filho criado, acesse terceiroFilho.
