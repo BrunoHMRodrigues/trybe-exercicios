@@ -43,7 +43,9 @@ pai.appendChild(irmaoElementoOndeVoceEsta);
 
 // Exercicio 02
 // Crie um filho para elementoOndeVoceEsta.
-
+const filhoElementoOndeVoceEsta = document.createElement("section");
+filhoElementoOndeVoceEsta.id = "filhoElementoOndeVoceEsta";
+elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
 // Exercicio 03
 // Crie um filho para primeiroFilhoDoFilho.
 
