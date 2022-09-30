@@ -49,7 +49,11 @@ function abrirUrl () {
 // Exercicio 05
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
-spotrybefy.addEventListener("mouseover", )
+spotrybefy.addEventListener("mouseover", mudarCor);
+
+function mudarCor () {
+  spotrybefy.style.color = "yellow";
+}
 
 // Exercicio 06
 // Segue abaixo um exemplo do uso de event.target:
