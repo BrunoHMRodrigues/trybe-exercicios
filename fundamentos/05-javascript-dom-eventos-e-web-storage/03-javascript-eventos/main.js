@@ -24,16 +24,29 @@ firstLi.addEventListener("click", alterarPosicao);
 secondLi.addEventListener("click", alterarPosicao);
 thirdLi.addEventListener("click", alterarPosicao);
  
+// Exercicio 03
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+const inputText = document.getElementById("input");
+inputText.addEventListener("input", alterarConteudoLista);
 
+function alterarConteudoLista(event) {  
+  const pegaTech = document.querySelector('.tech');
+  pegaTech.innerText = event.target.value;
+}
+
+// Exercicio 04
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
+
+// Exercicio 05
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
+
+// Exercicio 06
 // Segue abaixo um exemplo do uso de event.target:
 
 
