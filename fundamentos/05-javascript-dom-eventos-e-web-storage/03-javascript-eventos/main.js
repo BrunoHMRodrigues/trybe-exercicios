@@ -6,11 +6,24 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 
 // - Copie esse arquivo e edite apenas ele;
+// Exercicio 01
 //  - Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
+// R: transform: translateY(-20px); se encontra no CSS para a classe tech
 
+// Exercicio 02
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
+function alterarPosicao (listaClicada) {
+  const pegaTech = document.querySelector('.tech');
+  pegaTech.classList.remove('tech');
+  listaClicada.target.classList.add('tech');
+}
+
+firstLi.addEventListener("click", alterarPosicao);
+secondLi.addEventListener("click", alterarPosicao);
+thirdLi.addEventListener("click", alterarPosicao);
+ 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
