@@ -39,7 +39,12 @@ function alterarConteudoLista(event) {
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
+const spotrybefy = document.getElementById("my-spotrybefy");
+spotrybefy.addEventListener("dblclick", abirUrl);
 
+function abirUrl () {
+    window.open("https://www.spotify.com/br/"); // Poderia usar: window.location.replace("https://www.spotify.com/br/")
+}
 
 // Exercicio 05
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
