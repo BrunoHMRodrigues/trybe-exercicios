@@ -56,3 +56,22 @@ primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
 // Exercicio 04
 // A partir desse filho criado, acesse terceiroFilho.
 primeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling
+
+
+// Removendo Elementos
+// Exercicio 01
+// Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+console.log(pai.childNodes);
+let arrayPai = pai.childNodes;
+for (let index = (arrayPai.length - 1); index >= 0; index-=1) {
+    if (arrayPai[index].id !== "elementoOndeVoceEsta") {
+        arrayPai[index].remove();
+    }    
+}
+
+let arrayElementoOndeVoceEsta = elementoOndeVoceEsta.childNodes;
+for (let index = (arrayElementoOndeVoceEsta.length - 1); index >= 0; index-=1) {
+    if (arrayElementoOndeVoceEsta[index].id !== "primeiroFilhoDoFilho") {
+        arrayElementoOndeVoceEsta[index].remove();
+    }    
+}
