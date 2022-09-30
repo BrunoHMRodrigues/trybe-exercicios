@@ -40,16 +40,16 @@ function alterarConteudoLista(event) {
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 const spotrybefy = document.getElementById("my-spotrybefy");
-spotrybefy.addEventListener("dblclick", abirUrl);
+spotrybefy.addEventListener("dblclick", abrirUrl);
 
-function abirUrl () {
+function abrirUrl () {
     window.open("https://www.spotify.com/br/"); // Poderia usar: window.location.replace("https://www.spotify.com/br/")
 }
 
 // Exercicio 05
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
-
+spotrybefy.addEventListener("mouseover", )
 
 // Exercicio 06
 // Segue abaixo um exemplo do uso de event.target:
