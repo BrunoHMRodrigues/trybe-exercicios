@@ -72,6 +72,10 @@
 
         // Exercicio 03
         // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+        const main = document.getElementsByClassName("main-content"); // Desnecessário, poderia ser usado mainContent, mas quis treinar
+        const centerContent = document.createElement("section");
+        centerContent.className = "center-content";
+        main.appendChild(centerContent);
 
         // Exercicio 04
         // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
