@@ -55,6 +55,12 @@ function mudarCor () {
   spotrybefy.style.color = "yellow";
 }
 
+spotrybefy.addEventListener("mouseout", voltarCor);
+
+function voltarCor () {
+  spotrybefy.style.color = "white";
+}
+
 // Exercicio 06
 // Segue abaixo um exemplo do uso de event.target:
 
