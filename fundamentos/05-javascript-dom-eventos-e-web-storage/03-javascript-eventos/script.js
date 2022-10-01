@@ -54,7 +54,16 @@ povoarCalendario();
 // Sua função deve receber um parâmetro com a string 'Feriados'
 // Adicione a este botão a ID "btn-holiday"
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container"
+const buttonContainer = document.querySelector("div.buttons-container");
 
+function criaBotao() {
+  const button = document.createElement("button");
+
+  button.id = "btn-holiday";
+  button.innerText = "Feriados";
+  buttonContainer.appendChild(button);
+}
+criaBotao();
 
 // PARTE 03
 //Implemente uma função que muda a cor de fundo dos dias que possuem a classe "holiday".
