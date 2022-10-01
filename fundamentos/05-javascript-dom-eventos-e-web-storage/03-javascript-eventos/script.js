@@ -135,7 +135,18 @@ buttonSexta.addEventListener("click", mudarTextoSextas);
 // Implemente duas funções que criem um efeito de “zoom”.
 // Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
 // Dica - Propriedade: event.target.
+const listaDias = document.getElementById("days");
+listaDias.addEventListener("mouseover", darZoom);
+listaDias.addEventListener("mouseout", tirarZoom);
 
+function darZoom (event) {  
+    event.target.style.fontSize = "30px";
+    
+}
+function tirarZoom (event) {  
+  event.target.style.fontSize = "20px";
+  
+}
 
 // PARTE 07
 // Implemente uma função que adicione uma tarefa personalizada ao calendário.
