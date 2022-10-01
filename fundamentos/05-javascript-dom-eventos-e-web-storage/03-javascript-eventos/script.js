@@ -109,7 +109,27 @@ botaoSexta();
 // PARTE 05
 // Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira. Adicione ao botão “Sexta-feira” um evento de “click” e modifique o texto a ser exibido nos dias que são sextas-feiras.
 // 👀 É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial exibindo os dias.
+const buttonSexta = document.querySelector("#btn-friday");
+let guardarDiasSextas = [];
 
+function mudarTextoSextas () {
+  const listaSextas = document.querySelectorAll(".friday");
+  
+  for (let index = 0; index < listaSextas.length; index+=1) {
+    let sexta = listaSextas[index];
+
+    guardarDiasSextas.push(listaSextas[index].innerText);
+
+    if (sexta.innerText !== "Sextou!") {
+      sexta.innerText = "Sextou!";
+    } else {
+      sexta.innerText = guardarDiasSextas[index];
+    }
+    
+  }
+
+}
+buttonSexta.addEventListener("click", mudarTextoSextas);
 
 // PARTE 06
 // Implemente duas funções que criem um efeito de “zoom”.
