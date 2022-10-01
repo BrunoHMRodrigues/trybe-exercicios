@@ -216,3 +216,26 @@ listaDias.addEventListener("click", atribuirTarefaDia);
 // Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de erro ao clicar em “ADICIONAR”.
 // Ao pressionar a tecla “enter” o evento também deverá ser disparado.
 // Dica - Propriedade: key.
+const botaoAdicionar = document.querySelector("#btn-add");
+const textoInput = document.querySelector("#task-input");
+const taskLista = document.querySelector(".task-list")
+
+function adicionarCompromisso() {
+  let texto = textoInput.value;
+  const li = document.createElement("li");
+  li.innerText = texto
+
+  if (texto == "") {
+    alert("Nenhum compromisso digitado");
+  } else {
+    taskLista.appendChild(li);
+  }
+  
+}
+function testeKey (event) {
+  if (event.key === "Enter") {
+    adicionarCompromisso();
+  }
+}
+botaoAdicionar.addEventListener("click", adicionarCompromisso);
+textoInput.addEventListener("keypress", testeKey);
