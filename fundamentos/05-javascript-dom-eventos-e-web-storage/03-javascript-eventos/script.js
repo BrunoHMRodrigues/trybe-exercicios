@@ -25,7 +25,7 @@ function createDaysOfTheWeek() {
 // Os dias 4, 11, 18 e 25 são sextas-feiras. Eles devem conter a classe day e a classe friday. Ex: <li class="day friday">4</li>
 const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 const ul = document.getElementById("days");
-console.log(ul);
+
 function povoarCalendario () {
 
   for (let index = 0; index < decemberDaysList.length; index+=1) {
@@ -69,20 +69,27 @@ criaBotao();
 //Implemente uma função que muda a cor de fundo dos dias que possuem a classe "holiday".
 // Adicione ao botão "Feriados" um evento de "click" que altere a cor de fundo dos dias que possuem a classe "holiday"
 // 👀 É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial com a cor “rgb(238,238,238)”.
-function feriadosCor () {
-  const listaDiasHolyday = document.querySelectorAll(".holyday");
+const botaoHolyday = document.querySelector("#btn-holiday");
+const listaDiasHolyday = document.querySelectorAll(".holyday");
+const corPadrao = "rgb(238,238,238)";
+const newCor = "red";
+
+
+function feriadosCor () {  
 
   for (let index = 0; index < listaDiasHolyday.length; index+=1) {
     const diaHolyday = listaDiasHolyday[index];
-    console.log(diaHolyday);    
-    
-    diaHolyday.style.backgroundColor = "red";
     
     
+    if (diaHolyday.style.backgroundColor === newCor) {
+      diaHolyday.style.backgroundColor = corPadrao;
+    } else {
+      diaHolyday.style.backgroundColor = newCor;
+    }
   }
 }
+botaoHolyday.addEventListener("click", feriadosCor);
 
-document.addEventListener("click", feriadosCor);
 
 // PARTE 04
 // Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira".
