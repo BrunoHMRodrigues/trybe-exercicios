@@ -34,11 +34,11 @@ function povoarCalendario () {
     
     li.className = "day";
     li.innerText = dayCalendar;
-    if (dayCalendar === 24 || decemberDaysList === 25 || decemberDaysList === 31) {
-      li.classList.add = "day holiday";        
+    if (dayCalendar === 24 || dayCalendar === 25 || dayCalendar === 31) {
+      li.classList.add("holyday");        
     }
-    if (decemberDaysList === 4 || decemberDaysList === 11 || decemberDaysList === 18 || decemberDaysList === 25) {
-      li.classList.add = "friday";
+    if (dayCalendar === 4 || dayCalendar === 11 || dayCalendar === 18 || dayCalendar === 25) {
+      li.classList.add("friday");
     }
         
     ul.appendChild(li);    
