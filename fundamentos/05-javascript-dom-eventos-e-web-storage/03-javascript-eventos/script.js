@@ -69,7 +69,20 @@ criaBotao();
 //Implemente uma função que muda a cor de fundo dos dias que possuem a classe "holiday".
 // Adicione ao botão "Feriados" um evento de "click" que altere a cor de fundo dos dias que possuem a classe "holiday"
 // 👀 É interessante que esse botão possua também a lógica inversa. Ao ser clicado novamente, ele retorna à configuração inicial com a cor “rgb(238,238,238)”.
+function feriadosCor () {
+  const listaDiasHolyday = document.querySelectorAll(".holyday");
 
+  for (let index = 0; index < listaDiasHolyday.length; index+=1) {
+    const diaHolyday = listaDiasHolyday[index];
+    console.log(diaHolyday);    
+    
+    diaHolyday.style.backgroundColor = "red";
+    
+    
+  }
+}
+
+document.addEventListener("click", feriadosCor);
 
 // PARTE 04
 // Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira".
