@@ -97,6 +97,14 @@ botaoHolyday.addEventListener("click", feriadosCor);
 // Adicione a esse botão o ID "btn-friday";
 // Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
 
+function botaoSexta () {
+  const button = document.createElement("button");
+  button.innerText = "Sexta-Feira";
+  button.id = "btn-friday";
+
+  buttonContainer.appendChild(button);
+}
+botaoSexta();
 
 // PARTE 05
 // Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira. Adicione ao botão “Sexta-feira” um evento de “click” e modifique o texto a ser exibido nos dias que são sextas-feiras.
