@@ -23,6 +23,30 @@ function createDaysOfTheWeek() {
 // Os dias devem estar contidos em uma tag <li>, e todos devem ter a classe day. Ex: <li class="day">3</li>
 // Os dias 24, 25 e 31 são feriados e, além da classe day, devem conter também a classe holiday. Ex: <li class="day holiday">24</li>
 // Os dias 4, 11, 18 e 25 são sextas-feiras. Eles devem conter a classe day e a classe friday. Ex: <li class="day friday">4</li>
+const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+const ul = document.getElementById("days");
+console.log(ul);
+function povoarCalendario () {
+
+  for (let index = 0; index < decemberDaysList.length; index+=1) {
+    let li = document.createElement("li");
+    let dayCalendar = decemberDaysList[index];
+    
+    li.className = "day";
+    li.innerText = dayCalendar;
+    if (dayCalendar === 24 || decemberDaysList === 25 || decemberDaysList === 31) {
+      li.classList.add = "day holiday";        
+    }
+    if (decemberDaysList === 4 || decemberDaysList === 11 || decemberDaysList === 18 || decemberDaysList === 25) {
+      li.classList.add = "friday";
+    }
+        
+    ul.appendChild(li);    
+  }
+}
+
+povoarCalendario();
+
 
 
 // PARTE 02
