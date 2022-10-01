@@ -168,6 +168,16 @@ tarefa("cozinhar");
 // O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks"
 
+function legendaCorTarefa (string) {
+  const myTask = document.querySelector(".my-tasks");
+  const div = document.createElement("div");
+  div.className = "task";
+  div.style.backgroundColor = string;
+
+  myTask.appendChild(div);
+}
+legendaCorTarefa("orange");
+
 
 // PARTE 09
 // Implemente uma função que selecione uma tarefa.
