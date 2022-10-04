@@ -50,10 +50,10 @@ function keepFontFamily () {
 function keepSpaceLines () {
     let paragraph = document.getElementById("paragraph-text");
     // Space between Lines
-    if (localStorage.getItem("SpaceLines")) {
-        paragraph.style.lineHeight = localStorage.getItem("SpaceLines");
+    if (localStorage.getItem("spaceLines")) {
+        paragraph.style.lineHeight = localStorage.getItem("spaceLines");
     } else {
-        localStorage.setItem("SpaceLines", "25px");
+        localStorage.setItem("spaceLines", "25px");
         paragraph.style.lineHeight = "25px";
     }
 }
@@ -156,13 +156,13 @@ const fontSizeButton3 = document.getElementById("button-font-size3");
 function changeFontSize (event) {
     if (event.target === fontSizeButton1) {
         paragraph.style.fontSize = "20px";
-        // localStorage.setItem("fontSize", "20px");        
+        localStorage.setItem("fontSize", "20px");        
     } else if (event.target === fontSizeButton2) {
         paragraph.style.fontSize = "25px";    
-        // localStorage.setItem("fontSize", "25px");   
+        localStorage.setItem("fontSize", "25px");   
     } else if (event.target === fontSizeButton3) {
         paragraph.style.fontSize = "30px";
-        // localStorage.setItem("fontSize", "30px");     
+        localStorage.setItem("fontSize", "30px");     
     }
 }
 fontSizeButton1.addEventListener("click", changeFontSize);
@@ -175,9 +175,11 @@ const fontFamilyButton2 = document.getElementById("button-text-family2");
 
 function changeFamilySize (event) {
     if (event.target === fontFamilyButton1) {
-        paragraph.style.fontFamily = "Times New Roman,Times,serif";      
+        paragraph.style.fontFamily = "Times New Roman,Times,serif";    
+        localStorage.setItem("fontFamily", "Times New Roman,Times,serif");   
     } else if (event.target === fontFamilyButton2) {
-        paragraph.style.fontFamily = "Arial,Helvetica,sans-serif"      
+        paragraph.style.fontFamily = "Arial,Helvetica,sans-serif";
+        localStorage.setItem("fontFamily", "Arial,Helvetica,sans-serif");      
     }
 }
 fontFamilyButton1.addEventListener("click", changeFamilySize);
@@ -190,11 +192,14 @@ const buttonSpaceLines3 = document.getElementById("button-space-lines3");
 
 function changeFontSize (event) {
     if (event.target === buttonSpaceLines1) {
-        paragraph.style.lineHeight = "25px";        
+        paragraph.style.lineHeight = "25px";    
+        localStorage.setItem("spaceLines", "25px");
     } else if (event.target === buttonSpaceLines2) {
-        paragraph.style.lineHeight = "35px";       
+        paragraph.style.lineHeight = "35px";     
+        localStorage.setItem("spaceLines", "35px");  
     } else if (event.target === buttonSpaceLines3) {
-        paragraph.style.lineHeight = "45px";        
+        paragraph.style.lineHeight = "45px";  
+        localStorage.setItem("spaceLines", "45px");      
     }
 }
 buttonSpaceLines1.addEventListener("click", changeFontSize);
