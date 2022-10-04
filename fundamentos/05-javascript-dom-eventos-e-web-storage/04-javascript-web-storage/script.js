@@ -68,3 +68,21 @@ function changeFamilySize (event) {
 fontFamilyButton1.addEventListener("click", changeFamilySize);
 fontFamilyButton2.addEventListener("click", changeFamilySize);
 
+
+const buttonSpaceLines1 = document.getElementById("button-space-lines1");
+const buttonSpaceLines2 = document.getElementById("button-space-lines2");
+const buttonSpaceLines3 = document.getElementById("button-space-lines3");
+
+function changeFontSize (event) {
+    if (event.target === buttonSpaceLines1) {
+        paragraph.style.lineHeight = "25px";        
+    } else if (event.target === buttonSpaceLines2) {
+        paragraph.style.lineHeight = "35px";       
+    } else if (event.target === buttonSpaceLines3) {
+        paragraph.style.lineHeight = "45px";        
+    }
+}
+buttonSpaceLines1.addEventListener("click", changeFontSize);
+buttonSpaceLines2.addEventListener("click", changeFontSize);
+buttonSpaceLines3.addEventListener("click", changeFontSize);
+
