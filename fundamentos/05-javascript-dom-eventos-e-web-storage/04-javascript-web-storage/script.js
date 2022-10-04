@@ -35,3 +35,21 @@ function changeFontColor (event) {
 fontColorButton1.addEventListener("click", changeFontColor);
 fontColorButton2.addEventListener("click", changeFontColor);
 fontColorButton3.addEventListener("click", changeFontColor);
+
+
+const fontSizeButton1 = document.getElementById("button-font-size1");
+const fontSizeButton2 = document.getElementById("button-font-size2");
+const fontSizeButton3 = document.getElementById("button-font-size3");
+
+function changeFontSize (event) {
+    if (event.target === fontSizeButton1) {
+        paragraph.style.fontSize = "20px";        
+    } else if (event.target === fontSizeButton2) {
+        paragraph.style.fontSize = "25px";       
+    } else if (event.target === fontSizeButton3) {
+        paragraph.style.fontSize = "30px";        
+    }
+}
+fontSizeButton1.addEventListener("click", changeFontSize);
+fontSizeButton2.addEventListener("click", changeFontSize);
+fontSizeButton3.addEventListener("click", changeFontSize);
