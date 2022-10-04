@@ -1,3 +1,50 @@
+
+function keepStyleStorage () {
+    const body = document.getElementsByTagName("body")[0];
+    // Background Color
+    if (localStorage.getItem("backgroundColor") = null) {
+        localStorage.setItem("backgroundColor", "aqua")
+        body.style.backgroundColor = "aqua";
+    } else {
+        body.style.backgroundColor = localStorage.getItem("backgroundColor")
+    }
+
+    const paragraph = document.getElementsByTagName("paragraph-text");
+    // Font Color
+    if (localStorage.getItem("fontColor") = null) {
+        localStorage.setItem("fontColor", "black")
+        paragraph.style.color = "black";
+    } else {
+        paragraph.style.color = localStorage.getItem("fontColor")
+    }
+
+    // Font Size
+    if (localStorage.getItem("fontSize") = null) {
+        localStorage.setItem("fontSize", "20px")
+        paragraph.style.fontSize = "20px";
+    } else {
+        paragraph.style.fontSize = localStorage.getItem("fontSize")
+    }
+
+    // Font Family
+    if (localStorage.getItem("fontFamily") = null) {
+        localStorage.setItem("fontFamily", "Times New Roman,Times,serif")
+        paragraph.style.fontFamily = "Times New Roman,Times,serif";
+    } else {
+        paragraph.style.fontFamily = localStorage.getItem("fontFamily")
+    }
+
+
+    // Space between Lines
+    if (localStorage.getItem("SpaceLines") = null) {
+        localStorage.setItem("SpaceLines", "25px")
+        paragraph.style.lineHeight = "25px";
+    } else {
+        paragraph.style.lineHeight = localStorage.getItem("SpaceLines")
+    }
+}
+keepStyleStorage();
+
 const body = document.getElementsByTagName("body")[0];
 
 const backgroundColorButton1 = document.getElementById("button-background-color1");
