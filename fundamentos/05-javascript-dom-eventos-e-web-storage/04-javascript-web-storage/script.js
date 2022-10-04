@@ -1,49 +1,108 @@
-
+window.onload = keepStyleStorage();
 function keepStyleStorage () {
-    const body = document.getElementsByTagName("body")[0];
+    keepBackgroundStorage();
+    keepFontColor();
+    keepFontSize();
+    keepFontFamily();
+    keepSpaceLines();
+}
+function keepBackgroundStorage () {
+    let body = document.getElementsByTagName("body")[0];
     // Background Color
-    if (localStorage.getItem("backgroundColor") = null) {
+    if (localStorage.getItem("backgroundColor")) {
+        body.style.backgroundColor = localStorage.getItem("backgroundColor")
+    } else {
         localStorage.setItem("backgroundColor", "aqua")
         body.style.backgroundColor = "aqua";
-    } else {
-        body.style.backgroundColor = localStorage.getItem("backgroundColor")
-    }
-
-    const paragraph = document.getElementsByTagName("paragraph-text");
-    // Font Color
-    if (localStorage.getItem("fontColor") = null) {
-        localStorage.setItem("fontColor", "black")
-        paragraph.style.color = "black";
-    } else {
-        paragraph.style.color = localStorage.getItem("fontColor")
-    }
-
-    // Font Size
-    if (localStorage.getItem("fontSize") = null) {
-        localStorage.setItem("fontSize", "20px")
-        paragraph.style.fontSize = "20px";
-    } else {
-        paragraph.style.fontSize = localStorage.getItem("fontSize")
-    }
-
-    // Font Family
-    if (localStorage.getItem("fontFamily") = null) {
-        localStorage.setItem("fontFamily", "Times New Roman,Times,serif")
-        paragraph.style.fontFamily = "Times New Roman,Times,serif";
-    } else {
-        paragraph.style.fontFamily = localStorage.getItem("fontFamily")
-    }
-
-
-    // Space between Lines
-    if (localStorage.getItem("SpaceLines") = null) {
-        localStorage.setItem("SpaceLines", "25px")
-        paragraph.style.lineHeight = "25px";
-    } else {
-        paragraph.style.lineHeight = localStorage.getItem("SpaceLines")
     }
 }
-keepStyleStorage();
+function keepFontColor () {
+    let paragraph = document.getElementById("paragraph-text");
+    // Font Color
+    if (localStorage.getItem("fontColor")) {
+        paragraph.style.color = localStorage.getItem("fontColor");
+    } else {
+        localStorage.setItem("fontColor", "black");
+        paragraph.style.color = "black";  
+    }
+}
+function keepFontSize () {
+    let paragraph = document.getElementById("paragraph-text");
+    // Font Size
+    if (localStorage.getItem("fontSize")) {
+        paragraph.style.fontSize = localStorage.getItem("fontSize");
+    } else {
+        console.log("Entrou");
+        localStorage.setItem("fontSize", "20px");
+        paragraph.style.fontSize = "20px";
+    }
+}
+function keepFontFamily () {
+    let paragraph = document.getElementById("paragraph-text");
+    // Font Family
+    if (localStorage.getItem("fontFamily")) {
+        paragraph.style.fontFamily = localStorage.getItem("fontFamily");
+    } else {
+        localStorage.setItem("fontFamily", "Times New Roman,Times,serif");
+        paragraph.style.fontFamily = "Times New Roman,Times,serif";
+    }
+}
+function keepSpaceLines () {
+    let paragraph = document.getElementById("paragraph-text");
+    // Space between Lines
+    if (localStorage.getItem("SpaceLines")) {
+        paragraph.style.lineHeight = localStorage.getItem("SpaceLines");
+    } else {
+        localStorage.setItem("SpaceLines", "25px");
+        paragraph.style.lineHeight = "25px";
+    }
+}
+
+// function keepStyleStorage () {
+//     const body = document.getElementsByTagName("body")[0];
+//     // Background Color
+//     if (localStorage.getItem("backgroundColor") === null) {
+//         localStorage.setItem("backgroundColor", "aqua");
+//         body.style.backgroundColor = "aqua";
+//     } else {
+//         body.style.backgroundColor = localStorage.getItem("backgroundColor");
+//     }
+
+//     const paragraph = document.getElementsByTagName("paragraph-text");
+//     // Font Color
+//     if (localStorage.getItem("fontColor") === null) {
+//         localStorage.setItem("fontColor", "black");
+//         paragraph.style.color = "black";
+//     } else {
+//         paragraph.style.color = localStorage.getItem("fontColor");
+//     }
+
+//     // Font Size
+//     if (localStorage.getItem("fontSize") === null) {
+//         localStorage.setItem("fontSize", "20px");
+//         paragraph.style.fontSize = "20px";
+//     } else {
+//         paragraph.style.fontSize = localStorage.getItem("fontSize");
+//     }
+
+//     // Font Family
+//     if (localStorage.getItem("fontFamily") === null) {
+//         localStorage.setItem("fontFamily", "Times New Roman,Times,serif");
+//         paragraph.style.fontFamily = "Times New Roman,Times,serif";
+//     } else {
+//         paragraph.style.fontFamily = localStorage.getItem("fontFamily");
+//     }
+
+
+//     // Space between Lines
+//     if (localStorage.getItem("SpaceLines") === null) {
+//         localStorage.setItem("SpaceLines", "25px")
+//         paragraph.style.lineHeight = "25px";
+//     } else {
+//         paragraph.style.lineHeight = localStorage.getItem("SpaceLines")
+//     }
+// }
+// keepStyleStorage();
 
 const body = document.getElementsByTagName("body")[0];
 
@@ -53,11 +112,14 @@ const backgroundColorButton3 = document.getElementById("button-background-color3
 
 function changeBackgroundColor (event) {
     if (event.target === backgroundColorButton1) {
-        body.style.backgroundColor = "aqua";        
+        body.style.backgroundColor = "aqua";
+        localStorage.setItem("backgroundColor", "aqua");       
     } else if (event.target === backgroundColorButton2) {
-        body.style.backgroundColor = "lightgreen";        
+        body.style.backgroundColor = "lightgreen";    
+        localStorage.setItem("backgroundColor", "lightgreen");    
     } else if (event.target === backgroundColorButton3) {
-        body.style.backgroundColor = "lightcoral";        
+        body.style.backgroundColor = "lightcoral";   
+        localStorage.setItem("backgroundColor", "lightcoral");      
     }
 }
 backgroundColorButton1.addEventListener("click", changeBackgroundColor);
@@ -72,11 +134,14 @@ const paragraph = document.getElementById("paragraph-text");
 
 function changeFontColor (event) {
     if (event.target === fontColorButton1) {
-        paragraph.style.color = "black";        
+        paragraph.style.color = "black";  
+        localStorage.setItem("fontColor", "black");       
     } else if (event.target === fontColorButton2) {
-        paragraph.style.color = "red";        
+        paragraph.style.color = "red"; 
+        localStorage.setItem("fontColor", "red");        
     } else if (event.target === fontColorButton3) {
-        paragraph.style.color = "green";        
+        paragraph.style.color = "green";      
+        localStorage.setItem("fontColor", "green");   
     }
 }
 fontColorButton1.addEventListener("click", changeFontColor);
@@ -90,11 +155,14 @@ const fontSizeButton3 = document.getElementById("button-font-size3");
 
 function changeFontSize (event) {
     if (event.target === fontSizeButton1) {
-        paragraph.style.fontSize = "20px";        
+        paragraph.style.fontSize = "20px";
+        // localStorage.setItem("fontSize", "20px");        
     } else if (event.target === fontSizeButton2) {
-        paragraph.style.fontSize = "25px";       
+        paragraph.style.fontSize = "25px";    
+        // localStorage.setItem("fontSize", "25px");   
     } else if (event.target === fontSizeButton3) {
-        paragraph.style.fontSize = "30px";        
+        paragraph.style.fontSize = "30px";
+        // localStorage.setItem("fontSize", "30px");     
     }
 }
 fontSizeButton1.addEventListener("click", changeFontSize);
