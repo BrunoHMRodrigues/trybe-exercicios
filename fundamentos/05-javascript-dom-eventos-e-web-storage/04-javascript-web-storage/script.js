@@ -190,7 +190,7 @@ const buttonSpaceLines1 = document.getElementById("button-space-lines1");
 const buttonSpaceLines2 = document.getElementById("button-space-lines2");
 const buttonSpaceLines3 = document.getElementById("button-space-lines3");
 
-function changeFontSize (event) {
+function changeLineHeight (event) {
     if (event.target === buttonSpaceLines1) {
         paragraph.style.lineHeight = "25px";    
         localStorage.setItem("spaceLines", "25px");
@@ -202,7 +202,7 @@ function changeFontSize (event) {
         localStorage.setItem("spaceLines", "45px");      
     }
 }
-buttonSpaceLines1.addEventListener("click", changeFontSize);
-buttonSpaceLines2.addEventListener("click", changeFontSize);
-buttonSpaceLines3.addEventListener("click", changeFontSize);
+buttonSpaceLines1.addEventListener("click", changeLineHeight);
+buttonSpaceLines2.addEventListener("click", changeLineHeight);
+buttonSpaceLines3.addEventListener("click", changeLineHeight);
 
