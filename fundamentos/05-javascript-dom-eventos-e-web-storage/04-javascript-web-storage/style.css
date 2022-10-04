@@ -133,9 +133,6 @@ main {
 #button-text-family2 {
     font-family:Arial, Helvetica, sans-serif;
 }
-#button-text-family3 {
-    font-family:fantasy;
-}
 
 
 #section-space-lines {
@@ -160,15 +157,7 @@ main {
     margin: 6px;
 
 }
-#button-space-lines1 {
-    /* line-height: 25px; */
-}
-#button-space-lines2 {
-    /* line-height: 35px; */
-}
-#button-space-lines3 {
-    /* line-height: 45px; */
-}
+
 
 h2 {
     border: 2px solid white;

@@ -53,3 +53,18 @@ function changeFontSize (event) {
 fontSizeButton1.addEventListener("click", changeFontSize);
 fontSizeButton2.addEventListener("click", changeFontSize);
 fontSizeButton3.addEventListener("click", changeFontSize);
+
+
+const fontFamilyButton1 = document.getElementById("button-text-family1");
+const fontFamilyButton2 = document.getElementById("button-text-family2");
+
+function changeFamilySize (event) {
+    if (event.target === fontFamilyButton1) {
+        paragraph.style.fontFamily = "Times New Roman,Times,serif";      
+    } else if (event.target === fontFamilyButton2) {
+        paragraph.style.fontFamily = "Arial,Helvetica,sans-serif"      
+    }
+}
+fontFamilyButton1.addEventListener("click", changeFamilySize);
+fontFamilyButton2.addEventListener("click", changeFamilySize);
+
