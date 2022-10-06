@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section style="width: max-content;margin: auto">
+        <header><h1>Formulário</h1></header>
+    </section>
+
+    <form action="" style="padding: 25px; background-color: rgb(186, 196, 223); width: 500px; border: 1px solid black;margin: auto;" method="get">
+        <label for="userName" aria-valuemax="">Nome:
+            <input type="text" name="name" id="userName" minlength="10" maxlength="40">
+        </label>
+
+        <br>
+
+        <label for="userEmail">E-mail:
+            <input type="email" name="email" id="userEmail" minlength="10" maxlength="50">
+        </label>
+
+        <br>
+        <br>
+
+        <label for="city1">
+            <input type="radio" name="cities" id="city1">Natal
+        </label>
+        <label for="city2">
+            <input type="radio" name="cities" id="city2">João Pessoa
+        </label>
+        <label for="city3">
+            <input type="radio" name="cities" id="city3">Recife
+        </label>
+        <label for="city4">
+            <input type="radio" name="cities" id="city4">São Paulo
+        </label>
+
+        <br>
+        <br>
+
+        <section>
+            <label for="areaAnswer"> Espaço para digitar a resposta:
+                <br>
+                <textarea name="answer" id="areaAnswer" cols="30" rows="10" maxlength="500"></textarea>
+            </label>
+        </section>
+
+        <label for="date"> Data:
+            <input type="date" name="date" id="date">
+        </label>
+
+        <br>
+
+        <label for="checkbox1">
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        </label>
+
+        <br>
+
+        <label for="checkbox2">
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+        Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </label>
+
+        <section style="width: max-content;margin: auto;">
+            <section id="submit" style="width: max-content; display: inline-block;">
+                <button type="submit">Enviar</button>
+            </section>
+        
+            <section id="clear" style="width: max-content;display: inline-block;">
+                <button type="reset">Limpar</button>
+            </section>
+        </section>
+    </form>
+
+    <br>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
