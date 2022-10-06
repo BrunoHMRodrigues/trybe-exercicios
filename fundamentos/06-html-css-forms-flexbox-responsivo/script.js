@@ -17,3 +17,12 @@ function checkBoxClick(event) {
     event.preventDefault();
 }
 checkBox.addEventListener("click", checkBoxClick)
+
+const inputText = document.getElementById("input-text");
+
+function keyPressInput(event) {
+    if (event.key !== "a") {
+        event.preventDefault();
+    }    
+}
+inputText.addEventListener("keypress", keyPressInput);
