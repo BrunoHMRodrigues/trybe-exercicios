@@ -1,0 +1,52 @@
+const mage = {
+  healthPoints: 130,
+  intelligence: 45,
+  mana: 125,
+  damage: undefined,
+};
+
+const warrior = {
+  healthPoints: 200,
+  strength: 30,
+  weaponDmg: 2,
+  damage: undefined,
+};
+
+const dragon = {
+  healthPoints: 350,
+  strength: 50,
+  damage: undefined,
+};
+
+const battleMembers = { mage, warrior, dragon };
+
+const dragonDamage = (creature) => {
+    const strength = creature.strength;
+    const damage = Math.floor(15 + (Math.random() * (strength + 1 - 15)));
+    return damage;
+};
+
+const warriorDamage = (warrior) => {
+    const strength = warrior.strength;
+    const weaponDamage = warrior.weaponDmg;
+    const damage = Math.floor(strength + (Math.random() * ((strength * weaponDamage) + 1 - strength)));
+    return damage;
+};
+
+const mageDamage = (mage) => {
+    const intelligence = mage.intelligence;
+    const currentMana = mage.mana;
+    const damage = Math.floor(intelligence + (Math.random() * ((intelligence * 2) + 1 - intelligence)));
+    let usedMana = 0
+    if (currentMana >= 15) {
+        usedMana = 15;
+    } else {
+        damage = 'Não possui mana suficiente'
+    }
+
+    const objectMage = {
+        damage: damage,
+        manaUsed: usedMana,
+    };
+    return objectMage;
+};
