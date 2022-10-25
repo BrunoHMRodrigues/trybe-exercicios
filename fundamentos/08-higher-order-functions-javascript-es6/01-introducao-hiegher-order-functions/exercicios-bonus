@@ -50,3 +50,34 @@ const mageDamage = (mage) => {
     };
     return objectMage;
 };
+
+const gameActions = {
+    // Crie as HOFs neste objeto.
+    warriorTurn: (warriorDamage) => {
+        const warriorDam = warriorDamage(warrior);
+        dragon.healthPoints -= warriorDam;
+        warrior.damage = warriorDam;
+    },
+
+    mageTurn: (mageDamage) => {
+        const mageDam = mageDamage(mage).damage;
+        const manaConsumed = mageDamage(mage).manaUsed;
+        dragon.healthPoints -= mageDam;
+        mage.damage = mageDam;
+        mage.mana -= manaConsumed;
+    },
+
+    dragonTurn: (dragonDamage) => {
+        const dragonDam = dragonDamage(dragon);
+        warrior.healthPoints -= dragonDam;
+        mage.healthPoints -= dragonDam;
+        dragon.damage = dragonDam;
+    },
+
+    turnEndStatus: () => battleMembers,
+  };
+
+  gameActions.warriorTurn(warriorDamage);
+  gameActions.mageTurn(mageDamage);
+  gameActions.dragonTurn(dragonDamage);
+  console.log(gameActions.turnEndStatus());
