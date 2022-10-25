@@ -11,11 +11,20 @@
   
 //   emailListInData.forEach(showEmailList);
 
-const numbers = [19, 21, 30, 3, 45, 22, 15];
+// const numbers = [19, 21, 30, 3, 45, 22, 15];
 
-const findDivisibleBy3And5 = (number) => {    
-  if (number % 3 === 0 && number % 5 === 0) {
+// const findDivisibleBy3And5 = (number) => {    
+//   if (number % 3 === 0 && number % 5 === 0) {
+//     return true;
+//   }
+// };
+// console.log(numbers.find(findDivisibleBy3And5));
+
+const names = ['João', 'Irene', 'Fernando', 'Maria'];
+
+const findNameWithFiveLetters = (word) => {
+  if (word.length === 5) {
     return true;
   }
 };
-console.log(numbers.find(findDivisibleBy3And5));
+console.log(names.find(findNameWithFiveLetters));
