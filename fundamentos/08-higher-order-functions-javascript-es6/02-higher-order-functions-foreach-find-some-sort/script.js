@@ -43,18 +43,30 @@
   
 //   console.log(musicas.find(findMusic));
 
-  const musicas = [
-    { id: '31031685', title: 'Partita in C moll BWV 997' },
-    { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
-    { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
-  ];
+//   const musicas = [
+//     { id: '31031685', title: 'Partita in C moll BWV 997' },
+//     { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
+//     { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
+//   ];
   
-  function findMusic(id) {
-    return musicas.find( (element) => {
-        if (element.id === id) {
-            return true;
-        }
-    });
-  };
+//   function findMusic(id) {
+//     return musicas.find( (element) => {
+//         if (element.id === id) {
+//             return true;
+//         }
+//     });
+//   };
   
-  console.log(findMusic('31031685'));
+//   console.log(findMusic('31031685'));
+
+const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+
+const hasName = (arr, name) => {
+  return arr.some( (element) => {
+    if (element === name) {
+        return true;
+    }
+  })
+};
+
+console.log(hasName(names, 'Ana'));
