@@ -9,7 +9,7 @@ function everyoneWasBornOnSecXX(books) {
     books.forEach(book => {
         arrayYearBirth.push(book.author.birthYear)
     });
-    console.log(arrayYearBirth);
+    // console.log(arrayYearBirth);
     return arrayYearBirth.every( (element) => (element >= 1900 && element < 2000));
 }
 console.log(everyoneWasBornOnSecXX(booksObject.books));
