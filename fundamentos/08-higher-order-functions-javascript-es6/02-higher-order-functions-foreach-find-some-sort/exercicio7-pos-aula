@@ -1,0 +1,21 @@
+const booksObject = require('./books');
+
+// Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
+
+// const expectedResult = false;
+
+function authorUnique(books) {
+    let verifyNotSameYear = true;
+    books.forEach( (book, index) => {
+        let birthYear = book.author.birthYear;
+        books.forEach( (book2, index2) => {
+            let birthYear2 = book2.author.birthYear;
+            if (birthYear === birthYear2 && index !== index2) {
+                verifyNotSameYear = false;
+                return verifyNotSameYear;
+            }
+        });
+    });
+    return verifyNotSameYear;
+}
+console.log(authorUnique(booksObject.books));
