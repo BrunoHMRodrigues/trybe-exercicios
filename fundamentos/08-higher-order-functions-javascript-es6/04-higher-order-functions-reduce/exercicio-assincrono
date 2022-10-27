@@ -1,0 +1,8 @@
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+
+const result = numbers.reduce( (acc, curr) => acc + curr); // soma todos os numeros
+console.log(result);
+
+const evenNumbers = numbers.filter( (number) => number % 2 === 0);
+const resultEven = evenNumbers.reduce( (acc, curr) => acc + curr);
+console.log(resultEven);
