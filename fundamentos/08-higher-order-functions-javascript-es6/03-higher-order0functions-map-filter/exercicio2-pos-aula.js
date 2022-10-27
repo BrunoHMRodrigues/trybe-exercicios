@@ -13,7 +13,8 @@ const booksObject = require('./books');
 
 function nameAndAge(books) {
     const authors = books.map( (book) => (
-        { age: book.releaseYear - book.author.birthYear,
+        { 
+            age: book.releaseYear - book.author.birthYear,
             author: book.author.name,
         }
     ))
