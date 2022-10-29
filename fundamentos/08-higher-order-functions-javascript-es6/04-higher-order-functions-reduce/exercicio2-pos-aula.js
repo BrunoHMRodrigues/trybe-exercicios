@@ -67,4 +67,13 @@ const books = [
   const authors = (elements) => {
     return elements.reduce( (acc, curr, index) => `${acc} ${curr.author.name}${(index === elements.length-1) ? '.' : ','}`, '' )
   }
-  console.log(authors(books));
+//   console.log(authors(books));
+
+  // Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+  const authorsAge = (elements) => {
+    const totalAge = elements.reduce( (acc, curr) => acc += (curr.releaseYear - curr.author.birthYear), 0 )
+    const media = totalAge / elements.length;
+    console.log(totalAge);
+    return media;
+  }
+  console.log(authorsAge(books));
