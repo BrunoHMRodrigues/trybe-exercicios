@@ -76,4 +76,11 @@ const books = [
     console.log(totalAge);
     return media;
   }
-  console.log(authorsAge(books));
+//   console.log(authorsAge(books));
+
+// Encontre o livro com o maior nome.
+
+const biggerNameBook = (elements) => {
+    return elements.reduce( (bigger, curr) => (bigger.length > curr.name.length) ? bigger : curr.name, '')
+}
+console.log(biggerNameBook(books));
