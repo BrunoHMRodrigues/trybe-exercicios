@@ -1,0 +1,22 @@
+{
+  "name": "01-introducao-frontend-javascript-assincrono-ambiente-de-desenvolvimento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "lint": "eslint ./src",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nanoid": "^4.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "vite": "^3.2.3"
+  }
+}
