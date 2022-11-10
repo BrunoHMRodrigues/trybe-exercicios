@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(55, 46, 46);
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 600px;
+    height: 600px;
+    border: 15px double white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-image {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border: 5px solid white;
+}
+
+#hero-name {
+    font-size: 26px;
+}
+
+#button-random-hero {
+    font-size: 18px;
+    font-weight: 900;
+    background-color: rgb(42, 124, 42);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
