@@ -2,7 +2,7 @@ body {
     /* background-color: rgb(55, 46, 46); */
     width: 100vw;
     height: 100vh;
-    background-image: url('./background.webp');
+    background-image: url('./images/background.webp');
     background-size: cover;
     color: white;
     display: flex;
@@ -32,7 +32,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    background-image: url('./background-super-heroes-2.webp');
+    background-image: url('./images/background-super-heroes-2.webp');
     background-size: 100% 100%;
 }
 
