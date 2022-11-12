@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Select Pet</title>
 </head>
 <body>
-    <main>
-        <div class="container" id="container-buttons">
-            <button id="btn-dog">Get random dog</button>
-            <button id="btn-cat">Get random cat</button>
-            <button id="btn-surprise">Surprise me</button>
+    <h1>Select Pet</h1>
+    <main>        
+        <div class="container-buttons">
+            <button id="btn-dog" class="btn">Get random dog</button>
+            <button id="btn-cat" class="btn">Get random cat</button>
+            <button id="btn-surprise" class="btn">Surprise me</button>
         </div>
     
-        <div class="container">
-            <img src="" alt="Random pet">        
+        <div class="container-image">
+            <img src="" alt="Random pet" id="animal-image" hidden="true">        
         </div>
     </main>
 
-    <script src="./main.js" type="module"></script>
+    <script src="./src/main.js" type="module"></script>
 </body>
 </html>
