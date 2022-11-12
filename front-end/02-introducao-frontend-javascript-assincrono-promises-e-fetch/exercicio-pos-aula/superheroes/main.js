@@ -16,6 +16,7 @@ buttonHero.addEventListener('click', () => {
     fetch(`${baseAPI}/${numberID}`)
         .then((response) => response.json())
         .then((data) => {
+            heroImage.hidden = false;
             heroImage.src = data.image.url;
             heroName.innerText = data.name;
         })

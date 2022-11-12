@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(55, 46, 46);
+    /* background-color: rgb(55, 46, 46); */
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./background.webp');
     color: white;
 }
 
@@ -7,6 +10,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration:underline;
+    font-size: 30px;
 }
 
 .container {
@@ -18,21 +23,32 @@ header {
 main {
     width: 600px;
     height: 600px;
-    border: 15px double white;
+    border: 20px double rgb(145, 4, 4);
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-image: url('./background-super-heroes-2.webp');
+    background-size: 100% 100%;
 }
 
-#hero-image {
+.hero-card {
     width: 300px;
     height: 400px;
-    margin: 20px;
-    border: 5px solid white;
+    margin: 15px;
+    border: 10px solid rgb(145, 4, 4);
+}
+#hero-image {
+    width: 100%;
+    height: 100%;
 }
 
 #hero-name {
-    font-size: 26px;
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: red;
 }
 
 #button-random-hero {
