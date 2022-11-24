@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(55, 55, 55); */
+    background-image:url('./images/background-patas.jpg');
+    background-size: 400px;
+}
+
+h1 {
+    background-color: rgb(55, 55, 55);
+    width: 600px;
+    padding: 5px 0;
+    text-align: center;
+    border: 8px solid rgb(78, 140, 168);
+    color:  rgb(157, 195, 212);
+    text-decoration: underline;
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+main {
+    /* width: 600px; */
+    width: 600px;
+    height: 500px;
+    border: 18px double rgb(78, 140, 168);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(55, 55, 55);
+}
+
+.container-buttons {
+    min-width: 300px;
+    max-width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.btn {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+}
+#btn-dog {
+    background-color: rgb(72, 129, 72);
+}
+#btn-cat {
+    background-color: rgb(89, 89, 179);
+}
+#btn-surprise {
+    background-color: rgb(153, 89, 179);
+}
+
+.container-image {
+    /* min-width: 450px;
+    min-height: 380px; */
+    width: 80%;
+    height: 80%;
+    max-width: 80%;
+    max-height: 80%;
+    border: 8px solid  rgb(78, 140, 168);
+}
+#animal-image {
+    width: 100%;
+    height: 100%;
+}
